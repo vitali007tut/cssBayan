@@ -1,0 +1,54 @@
+.meme {
+    display: block;
+    background-size: cover;
+    width: 35vh;
+    height: 20vh;
+}
+
+.meme-1 {
+    background-image: url(./asserts/img/meme_1.jpg);
+}
+
+.meme-2 {
+    background-image: url(./asserts/img/meme_2.jpg);
+}
+
+.meme-3 {
+    background-image: url(./asserts/img/meme_3.jpg);
+}
+
+.meme-4 {
+    background-image: url(./asserts/img/meme_4.jpg);
+}
+
+.meme-5 {
+    background-image: url(./asserts/img/meme_5.jpg);
+}
+
+.body {
+    background-color: #f5f5eb;
+}
+
+/*   Hide content     */
+.tab input,
+.tab-content {
+    display: none;
+}
+
+.tab {
+    font: 0.8rem/1.2 Arial, sans-serif;
+    border: 1px solid #e9eaec;
+}
+
+.tab-title {
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab :checked+.tab-title {
+    color:blue;
+}
+.tab :checked~.tab-content {
+    display: block;
+}
