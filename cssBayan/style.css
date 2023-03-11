@@ -14,8 +14,6 @@ body {
     background-size: cover;
     margin-bottom: 10px;
     width: 35vh;
-    height: 25vh;
-
 }
 
 .meme-1 {
@@ -41,7 +39,7 @@ body {
 
 
 .wrapper {
-    max-width: 50%;
+    max-width: 45%;
     margin: 0 auto;
 }
 
@@ -51,8 +49,12 @@ body {
 }
 
 .tab-content {
-    display: none;
+    display: flex;
     justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    transition: 0.7s;
 }
 
 .tab {
@@ -73,7 +75,11 @@ body {
     float: right;
 }
 
-.wrapper .icon {
+.wrapper:hover .tab-title {
+    color: #000;
+}
+
+.wrapper:hover .icon {
     opacity: 1;
 }
 
@@ -81,8 +87,11 @@ body {
     color: #000;
 }
 
-.tab :checked~.tab-content {
-    display: flex;
+.tab :checked~.tab-content,
+.tab-title:hover ~ .tab-content {
+    width: 100%;
+    height: 25vh;
+    opacity: 1;
 }
 
 .tab :checked+.tab-title .icon {
