@@ -1,18 +1,18 @@
 html {
     font-family: 'Anton', sans-serif;
     font-family: 'Pacifico', cursive;
-    font-size: 10px;
+    font-size: 3vw;
 }
 
 body {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: #f5f5eb;
 }
 
 .meme {
     display: block;
     background-size: cover;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     width: 40vh;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .tab {
-    border-top: 1px solid grey;
+    border-top: 0.1vh solid grey;
 }
 
 .tab-title {
@@ -103,7 +103,7 @@ body {
 /*  this is from 820px to 1920px  */
 @media (min-width: 820px) {
     body {
-        font-size: 1.5rem;
+        font-size: 0.6rem;
     }
     .wrapper {
         max-width: 60%;
@@ -116,7 +116,7 @@ body {
 /*  this is from 1920px to ...  */
 @media (min-width: 1920px) {
     body {
-        font-size: 1.8rem;
+        font-size: 0.3rem;
     }
     .wrapper {
         max-width: 50%;
