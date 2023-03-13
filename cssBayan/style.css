@@ -76,14 +76,6 @@ body {
     transition: 0.5s;
 }
 
-.wrapper:hover .tab-title {
-    color: #000;
-}
-
-.wrapper:hover .icon {
-    opacity: 1;
-}
-
 .tab :checked+.tab-title {
     color: #000;
 }
@@ -100,8 +92,8 @@ body {
     rotate: 45deg;
 }
 
-/*  this is from 820px to 1920px  */
-@media (min-width: 820px) {
+/*  this is from 821px to 1920px  */
+@media (min-width: 821px) {
     body {
         font-size: 0.6rem;
     }
@@ -110,6 +102,14 @@ body {
     }
     .meme {
         width: 42vh;
+    }
+
+    .wrapper:hover .tab-title {
+        color: #000;
+    }
+    
+    .wrapper:hover .icon {
+        opacity: 1;
     }
 }
 
