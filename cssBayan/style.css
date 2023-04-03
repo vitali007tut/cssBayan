@@ -9,6 +9,10 @@ body {
     background-color: #f5f5eb;
 }
 
+h1 {
+    margin: 0 0 5px 0;
+}
+
 .meme {
     display: block;
     background-size: cover;
