@@ -1,0 +1,144 @@
+html {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 3vw;
+}
+
+body {
+    font-size: 1.1rem;
+    background-color: #f5f5eb;
+}
+
+h1 {
+    margin: 0 0 7px 0;
+}
+
+.meme {
+    display: block;
+    background-size: cover;
+    margin-bottom: 1vh;
+    width: 40vh;
+}
+
+.meme-1 {
+    background-image: url(./asserts/img/meme_1.jpg);
+}
+
+.meme-2 {
+    background-image: url(./asserts/img/meme_2.jpg);
+}
+
+.meme-3 {
+    background-image: url(./asserts/img/meme_3.jpg);
+}
+
+.meme-4 {
+    background-image: url(./asserts/img/meme_4.jpg);
+}
+
+.meme-5 {
+    background-image: url(./asserts/img/meme_5.jpg);
+}
+
+
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.tab input {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    height: 0;
+    transition: 0.7s;
+}
+
+.tab {
+    border-top: 0.1vh solid grey;
+}
+
+.tab-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #0059d9;
+}
+
+.icon {
+    content: url(../cssBayan/asserts/svg/AddSimbol.svg);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tab :checked+.tab-title {
+    color: #000;
+}
+
+.tab :checked~.tab-content {
+    width: 100%;
+    height: 32vh;
+    opacity: 1;
+}
+
+.tab :checked+.tab-title .icon {
+    rotate: 45deg;
+}
+
+/*  this is from 821px to 1920px  */
+@media (min-width: 821px) {
+    body {
+        font-size: 0.6rem;
+    }
+
+    .wrapper {
+        max-width: 60%;
+    }
+
+    .meme {
+        width: 42vh;
+    }
+
+    .wrapper:hover .tab-title {
+        color: #000;
+    }
+
+    .wrapper:hover .icon {
+        opacity: 1;
+    }
+
+    .tab-content,
+    .tab-title {
+        cursor: pointer;
+    }
+
+    .tab-title:hover~.tab-content,
+    .tab-content:hover {
+        width: 100%;
+        height: 32vh;
+        opacity: 1;
+    }
+
+}
+
+/*  this is from 1920px to ...  */
+@media (min-width: 1920px) {
+    body {
+        font-size: 0.3rem;
+    }
+
+    .wrapper {
+        max-width: 50%;
+    }
+
+    .tab :checked~.tab-content {
+        height: 40vh;
+    }
+}
